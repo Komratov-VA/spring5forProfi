@@ -11,4 +11,7 @@
         <property name="age" value="5" />
         <property name="name" value="seva"/>
     </bean>
+
+    <bean id="personBeanNameAware" class="chapter4.init.PersonBeanNameAware">
+    </bean>
 </beans>
