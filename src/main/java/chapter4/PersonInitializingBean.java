@@ -1,4 +1,4 @@
-package chapter4.init;
+package chapter4;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.support.GenericXmlApplicationContext;
@@ -20,7 +20,7 @@ public class PersonInitializingBean implements InitializingBean {
     public static void main(String[] args) {
 
         GenericXmlApplicationContext genericXmlApplicationContext = new GenericXmlApplicationContext();
-        genericXmlApplicationContext.load("chapter4.init/PersonContext.xml");
+        genericXmlApplicationContext.load("chapter4/PersonContext.xml");
         genericXmlApplicationContext.refresh();
 //        String[] strings =genericXmlApplicationContext.getBeanFactory().getBeanDefinitionNames();
 //        System.out.println(strings[0]);
@@ -39,6 +39,7 @@ public class PersonInitializingBean implements InitializingBean {
             throw new IllegalArgumentException("age is too small");
         }
     }
+
 }
 //<dependency>
 //<groupId>org.springframework</groupId>

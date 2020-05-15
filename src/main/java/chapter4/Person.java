@@ -1,9 +1,6 @@
-package chapter4.init;
+package chapter4;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import sun.net.idn.StringPrep;
 
 public class Person {
 
@@ -30,7 +27,7 @@ public class Person {
     public static void main(String[] args) {
 
         GenericXmlApplicationContext genericXmlApplicationContext = new GenericXmlApplicationContext();
-        genericXmlApplicationContext.load("chapter4.init/PersonContext.xml");
+        genericXmlApplicationContext.load("chapter4/PersonContext.xml");
         genericXmlApplicationContext.refresh();
 //        String[] strings =genericXmlApplicationContext.getBeanFactory().getBeanDefinitionNames();
 //        System.out.println(strings[0]);

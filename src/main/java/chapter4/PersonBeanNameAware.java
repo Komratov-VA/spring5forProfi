@@ -1,4 +1,4 @@
-package chapter4.init;
+package chapter4;
 
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.support.GenericXmlApplicationContext;
@@ -20,7 +20,7 @@ public class PersonBeanNameAware implements BeanNameAware {
 
     public static void main(String[] args) {
         GenericXmlApplicationContext genericXmlApplicationContext = new GenericXmlApplicationContext();
-        genericXmlApplicationContext.load("chapter4.init/PersonContext.xml");
+        genericXmlApplicationContext.load("chapter4/PersonContext.xml");
         genericXmlApplicationContext.refresh();
         PersonBeanNameAware personBeanNameAware = (PersonBeanNameAware)genericXmlApplicationContext.getBean("personBeanNameAware");
         System.out.println(personBeanNameAware.toString());
